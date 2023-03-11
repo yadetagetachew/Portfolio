@@ -1,9 +1,10 @@
 import React from 'react';
+import Hero from './media/hero.png';
 
 const Header = () => {
 return(
     <div className='hero d-flex justify-content-center'>
-        <img className="img-fluid me-4" src="/public/hero.png" alt='header'></img>
+        <img src={Hero} alt="Yadi Inc. Hero" />  
     </div>
 );
 }
