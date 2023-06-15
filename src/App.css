@@ -16,11 +16,47 @@ body{
   width: 100%;
   padding: auto;
 }
-
-.navigation a:hover {
-  color: #fffdfd;
-  font-size: 30px;
+.navigation-menu a{
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: perspective(1px) translateZ(0);
 }
+
+.navigation-menu a:before{
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  right: 22%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  padding-right: 0px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+@media screen and (max-width: 890px) {
+  .navigation-menu a:before {
+    right: 10%;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+
+.navigation-menu a:hover, .navigation-menu a:focus, .navigation-menu a:active{
+  transform: translateY(-5px);
+}
+
+.navigation-menu a:hover:before, .navigation-menu a:focus:before, .navigation-menu a:active:before {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
 
 .navigation img{
   height: 7rem;
@@ -132,6 +168,10 @@ body{
 
   .navigation-menu.expanded ul {
     display: block;
+  }
+
+  .navigation-menu a:before{
+    background: transparent;
   }
 }
 /* nav end */
