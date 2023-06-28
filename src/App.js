@@ -1,13 +1,14 @@
 import './App.css';
-// import Header from './Header';
 import Navbar from './Navbar';
 import Header from './Header';
+import Cards from './Cards';
 
 function App() {
   return (
-    <div class='portfoolio'>
-    <Navbar/>
-    <Header/>
+    <div className='app'>
+    <Navbar />
+    <Header />
+    <Cards />
     </div>
   );
 }
