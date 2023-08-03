@@ -6,7 +6,12 @@ import motivation from './media/motivation.jpeg';
 import carousel from './media/carousel.png';
 import supersonicmeow from './media/supersonicmeow.png';
 import todolist from './media/todolist.jpeg';
+import scoreBoard from './media/scoreBoard.png';
 import pokemon from './media/pokemon.png';
+import js from './media/js.png';
+import react from './media/react.png';
+import html from './media/html.png';
+import css from './media/css.png';
 
 
 const CardRender = () => {
@@ -53,6 +58,14 @@ const CardRender = () => {
       },
       {
         id: 6,
+        image: scoreBoard,
+        title: 'Score Board',
+        description: 'lorem anfu isddhdbck eicbe ckj oisdnc ec clodscjoidcj sdklcjcjmc .',
+        button: 'Visit Site',
+        link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/'
+    },
+      {
+        id: 6,
         image: todolist,
         title: 'To Do List',
         description: 'lorem anfu isddhdbck eicbe ckj oisdnc ec clodscjoidcj sdklcjcjmc .',
@@ -86,6 +99,13 @@ const CardRender = () => {
               <a href={card.link} target='_blank' rel="noreferrer" role="button">
                 <button type='button'>{card.button}</button>
               </a>
+              </div>
+              <div className='languages'>
+                <span> <img src={html} alt={card.title} /></span>
+                <span> <img src={css} alt={card.title} /></span>
+                <span> <img src={js} alt={card.title} /></span>
+                <span> <img src={react} alt={card.title} /></span>
+
               </div>
             </div>
           </div>

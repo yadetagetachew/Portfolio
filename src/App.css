@@ -285,7 +285,7 @@ button {
   border-radius: 5%;
 }
 
-a:hover {
+.project-button a:hover {
   box-shadow: rgba(80, 63, 205, 0.5) 0 1rem 30px;
   transition-duration: .1s;
 }
@@ -340,4 +340,12 @@ a:hover {
   text-align: center;
   font-size: 4vw;
   color: white;
+}
+
+.languages img{
+  display: inline-flex;
+  justify-content: center;
+  width: 25px;
+ margin-top: 5%;
+
 }
