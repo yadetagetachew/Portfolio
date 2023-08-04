@@ -22,7 +22,8 @@ const CardRender = () => {
         title: 'Quote Generator',
         description: 'Random motivation quote generator.',
         button: 'Visit Site',
-        link: 'https://frabjous-elf-d64314.netlify.app/'
+        link: 'https://frabjous-elf-d64314.netlify.app/',
+        icons: [css, html, js]
     },
     {
         id: 2,
@@ -30,7 +31,8 @@ const CardRender = () => {
         title: 'NomNom',
         description: 'Online food ordering site. ',
         button: 'Visit Site',
-        link: 'https://splendid-palmier-68e3f8.netlify.app/'
+        link: 'https://splendid-palmier-68e3f8.netlify.app/',
+        icons: [css, html, js]
     },
     {
         id: 3,
@@ -38,7 +40,8 @@ const CardRender = () => {
         title: 'Miles to Kilometers',
         description: 'lorem anfu isddhdbck eicbe ckj oisdnc ec clodscjoidcj sdklcjcjmc .',
         button: 'Visit Site',
-        link: 'https://yadetagetachew.github.io/Miles-to-Kilometers/'
+        link: 'https://yadetagetachew.github.io/Miles-to-Kilometers/',
+        icons: [css, html, js]
     },
     {
         id: 4,
@@ -46,7 +49,8 @@ const CardRender = () => {
         title: 'Carosel',
         description: 'lorem anfu isddhdbck eicbe ckj oisdnc ec clodscjoidcj sdklcjcjmc .',
         button: 'Visit Site',
-        link: 'https://hilarious-hamster-fbc2a5.netlify.app/'
+        link: 'https://hilarious-hamster-fbc2a5.netlify.app/',
+        icons: [css, html, js]
     },
     {
       id: 5,
@@ -54,7 +58,8 @@ const CardRender = () => {
       title: 'Super Sonic Meow',
       description: 'Haloween game',
       button: 'Visit Site',
-      link: 'https://supersonicmeow.com/'
+      link: 'https://supersonicmeow.com/',
+      icons: [css, html, js]
       },
       {
         id: 6,
@@ -62,7 +67,8 @@ const CardRender = () => {
         title: 'Score Board',
         description: 'lorem anfu isddhdbck eicbe ckj oisdnc ec clodscjoidcj sdklcjcjmc .',
         button: 'Visit Site',
-        link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/'
+        link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/',
+        icons: [css, react]
     },
       {
         id: 6,
@@ -70,7 +76,8 @@ const CardRender = () => {
         title: 'To Do List',
         description: 'lorem anfu isddhdbck eicbe ckj oisdnc ec clodscjoidcj sdklcjcjmc .',
         button: 'Visit Site',
-        link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/'
+        link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/',
+        icons: [css, html, js]
     },
     {
         id: 7,
@@ -78,7 +85,8 @@ const CardRender = () => {
         title: 'Pokemon',
         description: 'lorem anfu isddhdbck eicbe ckj oisdnc ec clodscjoidcj sdklcjcjmc .',
         button: 'Visit Site',
-        link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/'
+        link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/',
+        icons: [css, html, js]
     }
   ]);
 
@@ -101,11 +109,12 @@ const CardRender = () => {
               </a>
               </div>
               <div className='languages'>
-                <span> <img src={html} alt={card.title} /></span>
-                <span> <img src={css} alt={card.title} /></span>
-                <span> <img src={js} alt={card.title} /></span>
-                <span> <img src={react} alt={card.title} /></span>
-
+                {card.icons &&
+                  card.icons.map((icon, index) => (
+                    <span key={index}>
+                      <img src={icon} alt={`Icon ${index}`} />
+                    </span>
+                  ))}
               </div>
             </div>
           </div>
