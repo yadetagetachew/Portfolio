@@ -38,7 +38,7 @@ const CardRender = () => {
         id: 3,
         image: convert,
         title: 'Miles to Kilometers',
-        description: 'lorem anfu isddhdbck eicbe ckj oisdnc ec clodscjoidcj sdklcjcjmc .',
+        description: 'Miles to Kilometers converter.',
         button: 'Visit Site',
         link: 'https://yadetagetachew.github.io/Miles-to-Kilometers/',
         icons: [css, html, js]
@@ -47,7 +47,7 @@ const CardRender = () => {
         id: 4,
         image: carousel,
         title: 'Carosel',
-        description: 'lorem anfu isddhdbck eicbe ckj oisdnc ec clodscjoidcj sdklcjcjmc .',
+        description: 'Carosel with vannila js and bootstrap.',
         button: 'Visit Site',
         link: 'https://hilarious-hamster-fbc2a5.netlify.app/',
         icons: [css, html, js]
@@ -65,7 +65,7 @@ const CardRender = () => {
         id: 6,
         image: scoreBoard,
         title: 'Score Board',
-        description: 'lorem anfu isddhdbck eicbe ckj oisdnc ec clodscjoidcj sdklcjcjmc .',
+        description: 'Scrore keeper for any amount of players.',
         button: 'Visit Site',
         link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/',
         icons: [css, react]
@@ -74,7 +74,7 @@ const CardRender = () => {
         id: 6,
         image: todolist,
         title: 'To Do List',
-        description: 'lorem anfu isddhdbck eicbe ckj oisdnc ec clodscjoidcj sdklcjcjmc .',
+        description: 'To do list app.',
         button: 'Visit Site',
         link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/',
         icons: [css, html, js]
@@ -83,7 +83,7 @@ const CardRender = () => {
         id: 7,
         image: pokemon,
         title: 'Pokemon',
-        description: 'lorem anfu isddhdbck eicbe ckj oisdnc ec clodscjoidcj sdklcjcjmc .',
+        description: 'Pokemon Pokedex',
         button: 'Visit Site',
         link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/',
         icons: [css, html, js]
@@ -111,7 +111,7 @@ const CardRender = () => {
               <div className='languages'>
                 {card.icons &&
                   card.icons.map((icon, index) => (
-                    <span key={index}>
+                    <span key={card.id}>
                       <img src={icon} alt={`Icon ${index}`} />
                     </span>
                   ))}

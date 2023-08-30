@@ -7,6 +7,8 @@ body{
   color: #f1f1f1;
   margin: 0;
   font-family: 'Bebas Neue', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* navbar */
@@ -224,6 +226,7 @@ body{
   color: rgb(255, 255, 255);
   width: 100%;
   height: 35rem !important;
+  max-height: fit-content !important;
   background-color: rgba(202, 200, 236, 0.561) !important;
   display: inline-block;
   vertical-align: middle;
@@ -349,3 +352,55 @@ button {
  margin-top: 5%;
 
 }
+
+/* about section */
+.about-section{
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  margin: 10rem;
+}
+
+.about-img img{
+  height: 40rem;
+  width: 40rem;
+}
+.about-img {
+  width: 50%;
+  display: flex;
+  justify-content:end;
+  align-items: center;
+  margin: auto;
+}
+.about-discription {
+  width: 50%;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  color: white;
+  height: fit-content;
+  margin: auto;
+  line-height: 2.5rem;
+  font-size: 22px;
+}
+
+@media (max-width: 1200px) {
+  .about-section{
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+  }
+  .about-img{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  .about-discription{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 10px;
+  }
+  }
