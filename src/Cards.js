@@ -12,6 +12,7 @@ import js from './media/js.png';
 import react from './media/react.png';
 import html from './media/html.png';
 import css from './media/css.png';
+import myProjects from './media/myProject.png'
 
 
 const CardRender = () => {
@@ -92,6 +93,9 @@ const CardRender = () => {
 
   return (
     <div>
+         <div className='title'>
+          <img src={myProjects} alt="title" /> 
+        </div>
       <div className='card-container'>
         {cardInfo.map((card) => (
           <div className='card' key={card.id}>

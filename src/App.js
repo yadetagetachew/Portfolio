@@ -5,19 +5,18 @@ import Cards from './Cards';
 import Title from './Title';
 import About from './About';
 import Contact from './Contact';
+import myStory from './media/myStory.png'
 
 function App() {
   return (
     <div className='app'>
     <Navbar />
     <Header />
-    {/* <Title 
-      title="About Me"
-    /> */}
-    <About />
     <Title 
-      title="My Projects"
+      image = {myStory} 
     />
+    <About />
+
     <Cards />
     {/* <Title 
       title="Contact Me"

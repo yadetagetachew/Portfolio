@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Title(props) {
+function ProjectTitle(props) {
   return (
-    <div className='title-header'>
+    <div className='title-projects'>
           <img src={props.image} alt="title" /> 
         </div>
   )
 }
-export default Title
+export default ProjectTitle
