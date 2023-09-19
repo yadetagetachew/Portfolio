@@ -68,7 +68,7 @@ const CardRender = () => {
         title: 'Score Board',
         description: 'Scrore keeper for any amount of players.',
         button: 'Visit Site',
-        link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/',
+        link: 'https://imaginative-lamington-45d890.netlify.app',
         icons: [css, react]
     },
       {
@@ -77,8 +77,7 @@ const CardRender = () => {
         title: 'To Do List',
         description: 'To do list app.',
         button: 'Visit Site',
-        link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/',
-        icons: [css, html, js]
+        link: 'https://6493d5e706a50b1c6bd18fb4--astonishing-pie-3949db.netlify.app/https://imaginative-lamington-45d890.netlify.app[css, html, js]
     },
     {
         id: 7,
