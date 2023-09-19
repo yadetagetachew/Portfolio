@@ -5,13 +5,15 @@ import Cards from './Cards';
 import Title from './Title';
 import About from './About';
 import Contact from './Contact';
-import myStory from './media/myStory.png'
+import myStory from './media/myStory.png';
+// import Icon from './svg'
 
 function App() {
   return (
     <div className='app'>
     <Navbar />
     <Header />
+    {/* <Icon /> */}
     <Title 
       image = {myStory} 
     />
