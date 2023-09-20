@@ -108,7 +108,7 @@ const CardRender = () => {
               </h3>
               <p>{card.description}</p>
               <div className='project-button'>
-              <a href={card.link} target='_blank' rel="noreferrer" role="button">
+              <a href={card.link} target='_blank' rel="noopener noreferrer" role="button">
                 <button type='button'>{card.button}</button>
               </a>
               </div>
