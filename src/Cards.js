@@ -16,6 +16,7 @@ import myProjects from './media/myProject.png'
 
 
 const CardRender = () => {
+
   const [cardInfo, setCards] = useState([
     {
         id: 1,    
@@ -93,7 +94,7 @@ const CardRender = () => {
 
   return (
     <div>
-         <div className='title'>
+         <div className='title flex justify-center items-center'>
           <img src={myProjects} alt="title" /> 
         </div>
       <div className='card-container'>
