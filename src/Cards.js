@@ -16,7 +16,7 @@ import myProjects from './media/myProject.png'
 
 
 const CardRender = () => {
-
+// eslint-disable-next-line 
   const [cardInfo, setCards] = useState([
     {
         id: 1,    
